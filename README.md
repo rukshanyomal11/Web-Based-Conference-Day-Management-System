@@ -1,9 +1,9 @@
 > **Web-Based** **Conference** **Day** **Management** **System**
 > **ReadMe** **File**
 >
-> **Name:**A.P.Y.R. Kalhara
+> Name:A.P.Y.R. Kalhara
 
-**1\|** P a g e
+
 
 > **Conference** **Management** **System** **-Setup** **Instructions**
 
@@ -44,7 +44,7 @@ XAMPP or WAMP.
 >
 > o **MySQL**:For the database.
 
-**2\|** P a g e
+
 
 **Step** **3:** Create the Database
 
@@ -85,7 +85,7 @@ XAMPP or WAMP.
 > • Check your MySQLcredentials in the createdatabase.php file if the
 > database creation fails.
 
-**3\|** P a g e
+
 
 > **Features** **Implemented**
 
@@ -113,4 +113,4 @@ XAMPP or WAMP.
 > • **Automated** **Database** **Setup**:Creates tables andpreloads
 > sample data.
 
-**4\|** P a g e
+
