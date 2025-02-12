@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Sessions</title>
+    <link rel="stylesheet" href="admindashboard3.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <p>Conference Manager Admin</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="admindashboard.php">Session Schedule</a></li>
+            <li><a href="admindashboard3.php">All Sessions</a></li>
+            <li><a href="admindashboard1.php">File</a></li>
+            <li><a href="admindashboard2.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h3>All Sessions</h3>
+        
+        <!-- Table to Display All Sessions -->
+        <table border="1" cellpadding="10" cellspacing="0" class="all-sessions-table">
+            <thead>
+                <tr>
+                    <th>Speaker</th>
+                    <th>Title</th>
+                    <th>Date and Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function editSession(sessionId) {
+            alert("Edit session with ID: " + sessionId);
+           
+            window.location.href = "editSession.html?sessionId=" + sessionId;
+        }
+
+        function deleteSession(sessionId) {
+            if (confirm("Are you sure you want to delete session with ID: " + sessionId + "?")) {
+                alert("Session deleted successfully!");
+                
+            }
+        }
+    </script>
+</body>
+</html>

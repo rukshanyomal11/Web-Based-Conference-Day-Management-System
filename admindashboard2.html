@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Out</title>
+    <link rel="stylesheet" href="admindashboard2.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <p>Conference Manager Admin</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="admindashboard.php">Session Schedule</a></li>
+            <li><a href="admindashboard3.php">All Session </a></li>
+            <li><a href="admindashboard1.php">File</a></li>
+            <li><a href="admindashboard2.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h3>Log Out</h3>
+        <p>Are you sure you want to log out?</p>
+        <button onclick="logout()">Log Out</button>
+    </div>
+
+    <script>
+        function logout() {
+            alert("Logged out successfully!");
+            // log out actions
+            window.location.href = "main.html"; 
+        }
+    </script>
+</body>
+</html>

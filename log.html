@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="log.css">
+    <script src="log.js" defer></script> <!-- Link to external JS file for validation -->
+</head>
+<body>
+
+<section class="login-form">
+    <div class="container">
+        <h2>Login</h2>
+        <form action="log.php" method="post">
+
+            <!-- User Role Dropdown -->
+            <div class="form-group">
+                <label for="user-role">Select Role</label>
+                <select id="user-role" name="user_role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="Participant">Participant</option>
+                    <option value="Admin">Admin</option>
+                </select>
+                <span id="user-role-error" class="error-message"></span> 
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email-address">Email Address</label>
+                <input type="email" id="email-address" name="email_address" placeholder="Enter your email" required>
+                <span id="email-address-error" class="error-message"></span> 
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span id="password-error" class="error-message"></span> 
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Login</button>
+
+            <!-- Register Link -->
+            <p class="register-link">
+                Don’t have an account? <a href="register.html">Sign up here</a>.
+            </p>
+
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

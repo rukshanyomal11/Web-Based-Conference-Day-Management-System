@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+<section class="registration-form">
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registration-form" action="register.php" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name-with-initials">Name with Initials</label>
+                    <input type="text" id="name-with-initials" name="name_with_initials" placeholder="Enter your name with initials" required>
+                    <span id="name-with-initials-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="participation-category">Participation Category</label>
+                    <select id="participation-category" name="participation_category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="Participant">Participant</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                    <span id="participation-category-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" id="email-address" name="email_address" placeholder="Enter your email address" required>
+                    <span id="email-address-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="nic-passport">NIC / Passport No</label>
+                    <input type="text" id="nic-passport" name="nic_passport" placeholder="Enter your NIC/Passport No" required>
+                    <span id="nic-passport-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number</label>
+                    <input type="tel" id="mobile-number" name="mobile_number" placeholder="Enter your mobile number" required>
+                    <span id="mobile-number-error" class="error-message"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="Enter your country" required>
+                    <span id="country-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    <span id="username-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <span id="password-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Re-enter your password" required>
+                    <span id="confirm-password-error" class="error-message"></span>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            <p class="login-link">
+                Already have an account? <a href="log.html">Log in here</a>.
+            </p>
+        </form>
+    </div>
+</section>
+<script src="register.js"></script>
+</body>
+</html>

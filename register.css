@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    margin: 0;
+    background-image: url("24.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Register Container */
+.registration-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+/* Form Row Styles */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1 1 48%; 
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; 
+    color: white;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Input fields focus effect */
+input:focus, select:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+/* Button styles */
+button.submit-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #e5533d;
+}
+
+/* Login link styles */
+.login-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.login-link a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error message styling */
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-top: 5px;
+}
